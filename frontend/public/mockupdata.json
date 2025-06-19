@@ -1,0 +1,49 @@
+{
+    "mockupData": [
+        {
+        "id": 1,
+        "title": "Mockup Item 1",
+        "description": "This is a description for mockup item 1."
+        },
+        {
+        "id": 2,
+        "title": "Mockup Item 2",
+        "description": "This is a description for mockup item 2."
+        },
+        {
+        "id": 3,
+        "title": "Mockup Item 3",
+        "description": "This is a description for mockup item 3."
+        },
+        {
+        "id": 1,
+        "title": "Mockup Item 1",
+        "description": "This is a description for mockup item 1."
+        },
+        {
+        "id": 2,
+        "title": "Mockup Item 2",
+        "description": "This is a description for mockup item 2."
+        },
+        {
+        "id": 3,
+        "title": "Mockup Item 3",
+        "description": "This is a description for mockup item 3."
+        },
+        {
+        "id": 1,
+        "title": "Mockup Item 1",
+        "description": "This is a description for mockup item 1."
+        },
+        {
+        "id": 2,
+        "title": "Mockup Item 2",
+        "description": "This is a description for mockup item 2."
+        },
+        {
+        "id": 3,
+        "title": "Mockup Item 3",
+        "description": "This is a description for mockup item 3."
+        }
+    ]
+}
