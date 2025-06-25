@@ -76,7 +76,6 @@ function addRemoveButton(noteContent, note) {
   removeItem.textContent = 'Verwijder Notitie';
   document.querySelector('.overlay').appendChild(removeItem);
   removeItem.addEventListener('click', () => {
-    console.log('Remove item clicked');
     deleteNote(note.id).then(() => {
       overlay.classList.remove('active');
       overlay.removeChild(noteContent);
@@ -90,10 +89,9 @@ function addRemoveButton(noteContent, note) {
 }
 
 function removeRemoveButton() {
-  const removeItem = document.querySelector('.removeItem');
-  if (removeItem) {
-    document.querySelector('.overlay').removeChild(removeItem);
-  }
+  document.querySelectorAll('.removeItem').forEach(removeItem => {
+    removeItem.remove();
+  });
 }
 
 function addNewNote() {
@@ -135,12 +133,15 @@ function addNewNote() {
 
 function closeOverlay(noteContent) {
   const closeButton = noteContent.querySelector('.close-button');
+  if (!closeButton) {
+    return;
+  }
   closeButton.addEventListener('click', () => {
     overlay.classList.remove('active');
     overlay.removeChild(noteContent);
     removeRemoveButton();
-    
   });
 }
 
+export { closeOverlay, removeRemoveButton, addRemoveButton };
 
